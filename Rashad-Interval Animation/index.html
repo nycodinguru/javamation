@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+	html{
+			background-image: url("bling.png");
+			background-size: cover;
+		}
+
+	@keyframes myani{
+0%{			text-align: center;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: white;
+			font-style: italic;
+			font-size: 30pt;
+			text-shadow: 2px 2px rgba(0,0,0,.2);
+			background-color:rgba(95, 148,200,.6);
+	}
+25%{			text-align: center;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: rgba(95, 148,200,1);
+			font-style: italic;
+			font-size: 30pt;
+			text-shadow: 2px 2px ;
+			background-color:rgba(255, 255,255,.6);
+		}
+50%{		text-align: center;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: white;
+			font-style: italic;
+			font-size: 30pt;
+			text-shadow: 2px 2px rgba(0,0,0,.2);
+			background-color:rgba(95, 148,200,.6);
+	}
+70%{			text-align: center;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: rgba(95, 148,200,1);
+			font-style: italic;
+			font-size: 30pt;
+			text-shadow: 2px 2px ;
+			background-color:rgba(255, 255,255,.6);
+	}
+100%{		text-align: center;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: white;
+			font-style: italic;
+			font-size: 30pt;
+			text-shadow: 2px 2px rgba(0,0,0,.2);
+			background-color:rgba(95, 148,200,.6);
+	}
+
+
+
+
+	}
+		
+		h1{
+			text-align: center;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: white;
+			font-style: italic;
+			font-size: 30pt;
+			text-shadow: 2px 2px rgba(0,0,0,.2);
+			background-color:rgba(95, 148,200,.6);
+			animation: myani 1s ease-in-out 0s;;
+			animation-iteration-count: infinite;		}
+		#myContainer {
+			width: 400px;
+			height: 400px;
+			position: relative;
+			background: url('hotline.gif') no-repeat center;
+		}
+		#myAnimation{
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			padding-top: 271px;
+			padding-left: 178px;   
+			border-radius: 17px;
+		}
+		#parent{
+			display: flex;
+			justify-content: center;
+			padding-top: 40px;
+		}
+		#clickme{
+			display: flex;
+			justify-content: center;
+			padding-top: 40px;
+			font-size: 30pt;
+
+					}
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<h1 id="h1">HOTLINE FAIL</h1>
+
+	
+
+	<div id="parent">
+			<div id="myContainer">
+			<div><img src="ball.png" id="myAnimation"></div></div>
+	</div>
+<div id="clickme">
+
+	<div><input type="button" onclick="move()" name="click" value="DRIBBLE"></div>
+	<div><input type="button" onclick="reset()" name="reset" value="RESET"></div>
+</div>
+	
+	<script type="text/javascript">
+		var sound = new Audio("hot.mp3");
+		var sad = new Audio("sad.mp3");
+		var bounce = document.getElementById("myContainer") 
+		
+		function move(){
+			var elem = document.getElementById("myAnimation");
+			var pos = 0;
+			var posb = 100;
+			var id = setInterval(frame, 4);
+			function frame() {
+				sound.play();	
+				pos++;
+				if (pos <= 70){
+					posb--;
+				elem.style.bottom = posb + 'px';
+				}
+				else if (pos <= 140) { 
+				posb++;
+				elem.style.bottom = posb + 'px';
+				}
+				else if (pos <= 165){
+					posb--;
+				elem.style.bottom = posb + 'px';
+				}
+				else if (pos <= 195) { 
+				posb++;
+				elem.style.bottom = posb + 'px';
+				}
+				else if (pos <= 225){
+					posb--;
+				elem.style.bottom = posb + 'px';
+				}
+				else if (pos <= 250) { 
+				posb++;
+				elem.style.bottom = posb + 'px';
+				}
+				else if (pos <= 275) {
+					posb--;
+				elem.style.bottom = posb + 'px';
+				}
+				else if (pos <= 300){
+					posb++;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 325){
+					posb--;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 350){
+					posb--;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 375){
+					posb++;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 400){
+					posb--;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 430){
+					posb++;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 460){
+					posb--;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 500){
+					posb++;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 535){
+					posb--;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 575){
+					posb++;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 605){
+					posb--;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 640){
+					posb++;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 685){
+					posb--;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 720){
+					posb++;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 745){
+					posb--;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 770){
+					posb++;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 805){
+					posb--;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 845){
+					posb++;
+				elem.style.bottom = posb + 'px'
+				}
+				else if (pos <= 1500){
+					posb--;
+				elem.style.right = posb + 'px'
+				elem.style.bottom = posb + 'px'
+				}
+				
+				
+				else {
+					clearInterval(id)
+					bounce.style.backgroundImage = "url('airball.gif')"
+					sound.pause();
+					sad.play();
+					;
+			}
+
+
+			}			
+
+		}
+		
+	</script>
+	<script type="text/javascript">
+		function reset(){
+			location.reload();
+		}
+	</script>
+
+</body>
+</html>
